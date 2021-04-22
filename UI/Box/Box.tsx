@@ -15,7 +15,8 @@ export const ColoredTextOnHover = styled(Box)`
     font-weight: bold;
 `
 
-export const WhiteBox = styled(Box)`
+export const WhiteBox = styled(Box)<{ active?: boolean }>`
+    background-color: ${({ active }) => active ? 'white' : ''};
     width: fit-content;
     border-radius: 5px;
     transition: ${({ theme }) => theme.transition};
@@ -25,18 +26,25 @@ export const WhiteBox = styled(Box)`
     cursor: pointer;
     outline: none;
 
-    &:hover, &.selected {
+    &:hover,
+    &.selected {
         background-color: white;
         box-shadow: ${({ theme }) => theme.boxShadow};
         transition: ${({ theme }) => theme.transition};
         transform: scale(1.05);
 
         ${ColoredTextOnHover} {
-            background: linear-gradient(90deg, ${({ theme }) => theme.gradientColors.gradientColor1} 0%, ${({ theme }) => theme.gradientColors.gradientColor2} 33%, ${({ theme }) => theme.gradientColors.gradientColor3} 66%,  ${({ theme }) => theme.gradientColors.gradientColor4} 100%);
+            background: linear-gradient(
+                90deg,
+                ${({ theme }) => theme.gradientColors.gradientColor1} 0%,
+                ${({ theme }) => theme.gradientColors.gradientColor2} 33%,
+                ${({ theme }) => theme.gradientColors.gradientColor3} 66%,
+                ${({ theme }) => theme.gradientColors.gradientColor4} 100%
+            );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: GradientAnimator 7s ease infinite;
             background-size: 400% 400%;
         }
     }
-`
+`;

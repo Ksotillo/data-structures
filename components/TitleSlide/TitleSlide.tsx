@@ -27,6 +27,7 @@ const TitleSlide = ({
                     variants={variants}
                     custom={0}
                     transition={transition}
+                    style={{ margin: '0 auto' }}
                 >
                     <Title titleSize={titleSize}>{title}</Title>
                 </motion.div>

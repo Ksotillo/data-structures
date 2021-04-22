@@ -22,9 +22,9 @@ const classes: {
             "Presentación del profesor y de como iremos llevando la materia",
     },
     "class-2": {
-        title: "¿Por qué Java?",
+        title: "Programación Orientada a Objetos con Java",
         classNumber: 2,
-        totalSlides: 13,
+        totalSlides: 7,
         date: "22/04/2020",
         description:
             "Explicación de porque se tiene Java como lenguaje de programación en el curso y como instalarlo",
@@ -32,7 +32,7 @@ const classes: {
             gradientColor1: "#5b6d5b",
             gradientColor2: "#ca8a8b",
             gradientColor3: "#e2bcb7",
-            gradientColor4: "#f6e6e4",
+            gradientColor4: "#e9c3be",
         },
     },
     // "class-3": {
