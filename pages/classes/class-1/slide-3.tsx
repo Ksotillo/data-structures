@@ -290,6 +290,7 @@ const items = [
                         "Async",
                         "Videos y material",
                         "Evaluaciones sincronas",
+                        "Java como lenguaje de programación principal",
                         "Pregunten tanto como puedan",
                         `Let's keep it chill`,
                     ].map((value, index) => (
