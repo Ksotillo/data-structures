@@ -21,13 +21,20 @@ const classes: {
         description:
             "Presentación del profesor y de como iremos llevando la materia",
     },
-    // "class-2": {
-    //     title: "Introducción a la programación",
-    //     classNumber: 2,
-    //     totalSlides: 13,
-    //     date: "18/01/2020",
-    //     description: "Breve introducción a la programación",
-    // },
+    "class-2": {
+        title: "¿Por qué Java?",
+        classNumber: 2,
+        totalSlides: 13,
+        date: "22/04/2020",
+        description:
+            "Explicación de porque se tiene Java como lenguaje de programación en el curso y como instalarlo",
+        colors: {
+            gradientColor1: "#5b6d5b",
+            gradientColor2: "#ca8a8b",
+            gradientColor3: "#e2bcb7",
+            gradientColor4: "#f6e6e4",
+        },
+    },
     // "class-3": {
     //     title: "Entradas y salidas",
     //     classNumber: 3,

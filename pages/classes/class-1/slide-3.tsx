@@ -12,8 +12,8 @@ import { GlassCard } from 'UI/Card/Card'
 const schedule = [
     `
 👉 Presentación del curso.
-👉 Cronograma de clases. 
-👉 Metodología a utilizar. 
+👉 Cronograma de clases.
+👉 Metodología a utilizar.
 👉 Herramientas
 👉 Introducción a Java.
 👉 Ejercicios básicos para familiarizarnos con Java
