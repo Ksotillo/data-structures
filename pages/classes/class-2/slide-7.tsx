@@ -87,7 +87,7 @@ const Class1Slide7 = () => {
                                         <WhiteBox p={2} active>
                                             <ColoredText>
                                                 <a
-                                                    href="mailto:ksotillo@unimet.edu.ve"
+                                                    href="https://drive.google.com/folderview?id=1BPJS-GBGDLnXh3-Hh_Lxotm32_C43mxn"
                                                     target="_blank"
                                                 >
                                                     Descargar JDK y Apache
