@@ -1,13 +1,13 @@
 import { Container, Row } from "styled-bootstrap-grid";
 
 import styled from "styled-components";
-import { AnimationControls, motion, TargetAndTransition, Transition, VariantLabels } from "framer-motion";
+import { AnimationControls, motion, Transition, Variants } from "framer-motion";
 
 interface TitleSlide {
     title: string;
     titleSize?: string;
     controls: AnimationControls;
-    variants: boolean | VariantLabels | AnimationControls | TargetAndTransition;
+    variants: Variants;
     transition: Transition;
 }
 
