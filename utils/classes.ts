@@ -17,7 +17,7 @@ const classes: {
         title: "Introducción a la materia",
         classNumber: 1,
         totalSlides: 3,
-        date: "21/04/2020",
+        date: "21/04/2021",
         description:
             "Presentación del profesor y de como iremos llevando la materia",
     },
@@ -25,7 +25,7 @@ const classes: {
         title: "Programación Orientada a Objetos con Java",
         classNumber: 2,
         totalSlides: 7,
-        date: "22/04/2020",
+        date: "22/04/2021",
         description:
             "Explicación de porque se tiene Java como lenguaje de programación en el curso y como instalarlo",
         colors: {
@@ -35,20 +35,20 @@ const classes: {
             gradientColor4: "#e9c3be",
         },
     },
-    // "class-3": {
-    //     title: "Entradas y salidas",
-    //     classNumber: 3,
-    //     totalSlides: 2,
-    //     date: "27/01/2020",
-    //     description:
-    //         "En esta clase revisamos como hacer entradas (inputs) y salidas (outputs) con Python",
-    //     colors: {
-    //         gradientColor1: "#d3e0ea",
-    //         gradientColor2: "#1687a7",
-    //         gradientColor3: "#276678",
-    //         gradientColor4: "#1a4551",
-    //     },
-    // },
+    "class-3": {
+        title: "Vectores y Matrices",
+        classNumber: 3,
+        totalSlides: 3,
+        date: "07/05/2021",
+        description:
+            "En esta clase revisaremos las primeras Estructuras de Datos que tenemos en Java las cuales son vectores y matrices",
+        colors: {
+            gradientColor1: "#fcecdd",
+            gradientColor2: "#ffc288",
+            gradientColor3: "#fea82f",
+            gradientColor4: "#ff6701",
+        },
+    },
     // "class-4": {
     //     title: "Variables y tipos de datos",
     //     classNumber: 4,
@@ -57,10 +57,10 @@ const classes: {
     //     description:
     //         "En esta clase revisamos qué son las variables y cuales son los tipos de datos en Python",
     //     colors: {
-    //         gradientColor1: "#75cfb8",
-    //         gradientColor2: "#bbdfc8",
-    //         gradientColor3: "#f0e5d8",
-    //         gradientColor4: "#ffc478",
+    // gradientColor1: "#999b84",
+    // gradientColor2: "#926e6f",
+    // gradientColor3: "#ca8a8b",
+    // gradientColor4: "#e6c4c0",
     //     },
     // },
     // "class-5": {
