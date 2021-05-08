@@ -72,9 +72,7 @@ const Class3Slide2 = () => {
                         transition={transition}
                     >
                         <H2 shadow>
-                            Los arreglos son un tipo de estructura de datos que
-                            nos permite almacenar un conjunto de datos de un
-                            mismo tipo.
+                            Los arreglos de una sola dimensión son vectores y los de dos dimensiones son matrices.
                         </H2>
                     </motion.div>
                     <Box mt={4} pr={3}>
