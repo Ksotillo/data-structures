@@ -5,8 +5,6 @@ import { variants, transition } from "utils/motionVariants";
 import { useSlideAnimationControls } from "hooks/useAnimationControls";
 import { Box } from "UI/Box/Box";
 import { GlassCard } from "UI/Card/Card";
-import { RoundedImage } from "UI/Image/Image";
-import { RoundedImageContainer } from "UI/ImageContainer/RoundedImage";
 
 const Class1Slide2 = () => {
     const controls = useSlideAnimationControls();
@@ -114,26 +112,6 @@ const Class1Slide2 = () => {
                         </motion.div>
                     </Box>
                 </Col>
-                {/* <Col col={6}>
-                    <Box display="flex" justifyContent="flex-end">
-                        <motion.div
-                            initial="hidden"
-                            animate={controls}
-                            variants={variants}
-                            exit="exits"
-                            custom={3}
-                            transition={transition}
-                        >
-                            <RoundedImageContainer>
-                                <RoundedImage
-                                    src={"/images/class-2/java.svg"}
-                                    width={420}
-                                    height={420}
-                                />
-                            </RoundedImageContainer>
-                        </motion.div>
-                    </Box>
-                </Col> */}
             </Row>
         </Container>
     );

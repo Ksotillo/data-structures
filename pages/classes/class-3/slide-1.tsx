@@ -2,7 +2,7 @@ import { variants, transition } from "utils/motionVariants";
 import { useSlideAnimationControls } from "hooks/useAnimationControls";
 import TitleSlide from "components/TitleSlide/TitleSlide";
 
-const Class1Slide1 = () => {
+const Class3Slide1 = () => {
     const controls = useSlideAnimationControls();
     return (
         <TitleSlide
@@ -14,4 +14,4 @@ const Class1Slide1 = () => {
     );
 };
 
-export default Class1Slide1;
+export default Class3Slide1;

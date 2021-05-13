@@ -49,20 +49,20 @@ const classes: {
             gradientColor4: "#ff6701",
         },
     },
-    // "class-4": {
-    //     title: "Variables y tipos de datos",
-    //     classNumber: 4,
-    //     totalSlides: 7,
-    //     date: "31/01/2020",
-    //     description:
-    //         "En esta clase revisamos qué son las variables y cuales son los tipos de datos en Python",
-    //     colors: {
-    // gradientColor1: "#999b84",
-    // gradientColor2: "#926e6f",
-    // gradientColor3: "#ca8a8b",
-    // gradientColor4: "#e6c4c0",
-    //     },
-    // },
+    "class-4": {
+        title: "Complejidad: análisis de algoritmos",
+        classNumber: 4,
+        totalSlides: 17,
+        date: "12/05/2020",
+        description:
+            "En esta clase revisaremos como se analizan los algotimos utilizando la notación de la big O",
+        colors: {
+            gradientColor1: "#999b84",
+            gradientColor2: "#926e6f",
+            gradientColor3: "#ca8a8b",
+            gradientColor4: "#e6c4c0",
+        },
+    },
     // "class-5": {
     //     title: "Precedencia de operadores",
     //     classNumber: 5,

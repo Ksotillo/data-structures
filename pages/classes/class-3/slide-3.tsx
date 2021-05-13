@@ -255,4 +255,3 @@ const GlassCardForTabs = styled(GlassCard)`
 `
 
 export default Class3Slide2;
-
