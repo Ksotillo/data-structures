@@ -43,6 +43,7 @@ const Class4Slide17 = () => {
                             height="237"
                             src="https://www.youtube.com/embed/MyAiCtuhiqQ"
                             title="YouTube video player"
+                            // @ts-ignore
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen
@@ -67,6 +68,7 @@ const Class4Slide17 = () => {
                             height="237"
                             src="https://www.youtube.com/embed/IZgOEC0NIbw"
                             title="YouTube video player"
+                            // @ts-ignore
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen
