@@ -91,7 +91,11 @@ const Class4Slide17 = () => {
                             justifyContent="center"
                         >
                             <ColoredText>
-                                <a href="https://classroom.google.com/u/0/c/MzI1MzEzMjg3MDgy/m/MzI1MzIwMTYxMjk5/details">
+                                <a
+                                    href="https://classroom.google.com/u/0/c/MzI1MzEzMjg3MDgy/m/MzI1MzIwMTYxMjk5/details"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     Libro de la materia (Página 9, sección 1.4)
                                 </a>
                             </ColoredText>
