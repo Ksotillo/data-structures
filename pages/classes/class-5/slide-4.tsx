@@ -1,14 +1,14 @@
 import { Container, Row, Col } from "styled-bootstrap-grid";
-import { Text, H2, H3 } from "UI/Typography/Typography";
+import { Text, H1, H3 } from "UI/Typography/Typography";
 import { motion } from "framer-motion";
 import { variants, transition } from "utils/motionVariants";
 import { useSlideAnimationControls } from "hooks/useAnimationControls";
 import { Box } from "UI/Box/Box";
-import { GlassCard } from "UI/Card/Card";
+import { GlassCard, GlassCardContent } from "UI/Card/Card";
 import { RoundedImage } from "UI/Image/Image";
 import { RoundedImageContainer } from "UI/ImageContainer/RoundedImage";
 
-const Class5Slide2 = () => {
+const Class5Slide4 = () => {
     const controls = useSlideAnimationControls();
     return (
         <Container>
@@ -23,7 +23,11 @@ const Class5Slide2 = () => {
                             custom={0}
                             transition={transition}
                         >
-                            <H2 shadow>Pongamos esto en perspectiva...</H2>
+                            <H1 shadow>
+                                Pero la realidad es que hay muchas maneras más
+                                fáciles y eficientes de poder acomodar dichar
+                                ropa
+                            </H1>
                         </motion.div>
                     </Box>
                     <Box pr={5}>
@@ -37,18 +41,29 @@ const Class5Slide2 = () => {
                         >
                             {/* @ts-ignore */}
                             <GlassCard mt={4} whiteStyle>
-                                <p>
-                                    La ropa es un ejemplo perfecto de ello,
-                                    imaginemos que tenemos un monto de ropa que
-                                    necesitamos organizar.
-                                    <br />
-                                    <br />
-                                    En el mejor de los casos la ropa te la pueden dar
-                                    un poco acomodada y doblada sólo para que se guarde,
-                                    en el peor de los casos se va a dar en bruto, es decir,
-                                    que te dan la ropa y te dicen que tienes que acomodarla, doblarla
-                                    y guardarla
-                                </p>
+                                <GlassCardContent whiteStyle>
+                                    <p>
+                                        Por ejemplo:
+                                        <ul>
+                                            <li>
+                                                En gabetas por tipo de ropa.
+                                            </li>
+                                            <li>Guindada por colores</li>
+                                            <li>Doblada por colores</li>
+                                            <li>
+                                                Doblada y en gabetas por colores
+                                            </li>
+                                        </ul>
+                                        De esta forma se nos es más fácil
+                                        guardarlas, de manera de que ahora
+                                        podemos tener más espacio y podemos
+                                        localizar la ropa más fácilmente.
+                                        <br />
+                                        <br />
+                                        Esto es un buen ejemplo de lo que
+                                        podemos hacer con una estructura de dato
+                                    </p>
+                                </GlassCardContent>
                             </GlassCard>
                         </motion.div>
                     </Box>
@@ -63,11 +78,11 @@ const Class5Slide2 = () => {
                             custom={2}
                             transition={transition}
                         >
-                            <RoundedImageContainer mt={3}>
+                            <RoundedImageContainer mt={6}>
                                 <RoundedImage
-                                    src={"/images/class-5/montón-de-ropa.jpg"}
-                                    width={400}
-                                    height={313}
+                                    src={"/images/class-5/ropa_ordenada.png"}
+                                    width={475}
+                                    height={336}
                                 />
                             </RoundedImageContainer>
                         </motion.div>
@@ -77,4 +92,4 @@ const Class5Slide2 = () => {
         </Container>
     );
 };
-export default Class5Slide2;
+export default Class5Slide4;

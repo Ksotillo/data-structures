@@ -63,34 +63,34 @@ const classes: {
             gradientColor4: "#e6c4c0",
         },
     },
-    // "class-5": {
-    //     title: "Precedencia de operadores",
-    //     classNumber: 5,
-    //     totalSlides: 2,
-    //     date: "31/01/2020",
-    //     description:
-    //         "En esta clase revisaremos el orden de precedencia de los operadores aritméticos",
-    //     colors: {
-    //         gradientColor1: "#94b5c0",
-    //         gradientColor2: "#350b40",
-    //         gradientColor3: "#ad6c80",
-    //         gradientColor4: "#ee99a0",
-    //     },
-    // },
-    // "class-6": {
-    //     title: "Operadores lógicos y de comparación",
-    //     classNumber: 6,
-    //     totalSlides: 2,
-    //     date: "05/02/2020",
-    //     description:
-    //         "En esta clase revisaremos los operadores lógicos y de comparación, usados comunmente para expresar operaciones lógicas",
-    //     colors: {
-    //         gradientColor1: "#845ec2",
-    //         gradientColor2: "#ffc75f",
-    //         gradientColor3: "#f9f871",
-    //         gradientColor4: "#ff5e78",
-    //     },
-    // },
+    "class-5": {
+        title: "Introducción a las Estructuras de Datos",
+        classNumber: 5,
+        totalSlides: 7,
+        date: "18/05/2020",
+        description:
+            "En esta clase daremos una breve introducción a las Estructuras de Datos que estaremos viendo a lo largo de la materia",
+        colors: {
+            gradientColor1: "#02475e",
+            gradientColor2: "#687980",
+            gradientColor3: "#f3bda1",
+            gradientColor4: "#fefecc",
+        },
+    },
+    "class-6": {
+        title: "Memoria y como se guardas los datos",
+        classNumber: 6,
+        totalSlides: 10,
+        date: "05/02/2020",
+        description:
+            "En esta clase revisaremos los operadores lógicos y de comparación, usados comunmente para expresar operaciones lógicas",
+        colors: {
+            gradientColor1: "#72147e",
+            gradientColor2: "#f21170",
+            gradientColor3: "#fa9905",
+            gradientColor4: "#ff5200",
+        },
+    },
     // "class-7": {
     //     title: "Estructuras de control: estructuras selectivas",
     //     classNumber: 7,

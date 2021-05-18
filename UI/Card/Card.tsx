@@ -19,7 +19,9 @@ export const GlassCard = styled.div<{ whiteStyle?: boolean }>`
     h3,
     h4,
     h5,
-    h6 {
+    h6,
+    i,
+    strong {
         color: ${({ whiteStyle }) =>
             whiteStyle ? "#1a4551 !important" : "inherit"};
     }
@@ -29,11 +31,12 @@ export const GlassCard = styled.div<{ whiteStyle?: boolean }>`
     }
 `;
 
-export const GlassCardContent = styled.div`
+export const GlassCardContent = styled.div<{ whiteStyle?: boolean }>`
     overflow: auto;
     max-height: 400px;
     padding: 1rem;
-
+    color: ${({ whiteStyle }) =>
+        whiteStyle ? "#1a4551 !important" : "inherit"};
 
     h2 {
         text-align: center;
@@ -92,6 +95,8 @@ export const GlassCardContent = styled.div`
 
         li {
             margin: 0 0 10px 0;
+            color: ${({ whiteStyle }) =>
+                whiteStyle ? "#1a4551 !important" : "inherit"};
         }
     }
 `;
