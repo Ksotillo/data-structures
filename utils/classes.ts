@@ -53,7 +53,7 @@ const classes: {
         title: "Complejidad: análisis de algoritmos",
         classNumber: 4,
         totalSlides: 17,
-        date: "12/05/2020",
+        date: "12/05/2021",
         description:
             "En esta clase revisaremos como se analizan los algotimos utilizando la notación de la big O",
         colors: {
@@ -66,8 +66,8 @@ const classes: {
     "class-5": {
         title: "Introducción a las Estructuras de Datos",
         classNumber: 5,
-        totalSlides: 7,
-        date: "18/05/2020",
+        totalSlides: 6,
+        date: "18/05/2021",
         description:
             "En esta clase daremos una breve introducción a las Estructuras de Datos que estaremos viendo a lo largo de la materia",
         colors: {
@@ -81,7 +81,7 @@ const classes: {
         title: "Memoria y como se guardas los datos",
         classNumber: 6,
         totalSlides: 5,
-        date: "05/02/2020",
+        date: "18/05/2020",
         description:
             "En esta clase revisaremos los operadores lógicos y de comparación, usados comunmente para expresar operaciones lógicas",
         colors: {
