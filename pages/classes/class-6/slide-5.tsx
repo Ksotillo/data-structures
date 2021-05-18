@@ -8,12 +8,12 @@ import { GlassCard, GlassCardContent } from "UI/Card/Card";
 import { RoundedImage } from "UI/Image/Image";
 import { RoundedImageContainer } from "UI/ImageContainer/RoundedImage";
 
-const Class6Slide2 = () => {
+const Class6Slide5 = () => {
     const controls = useSlideAnimationControls();
     return (
         <Container>
             <Row>
-                <Col col={7}>
+                <Col col={6}>
                     <Box pr={5}>
                         <motion.div
                             initial="hidden"
@@ -23,7 +23,9 @@ const Class6Slide2 = () => {
                             custom={0}
                             transition={transition}
                         >
-                            <H1 shadow>¿Cómo funciona la memoria?</H1>
+                            <H1 shadow>
+                                Acá podemos apreciar mejor como funciona
+                            </H1>
                         </motion.div>
                     </Box>
                     <Box pr={5}>
@@ -38,20 +40,21 @@ const Class6Slide2 = () => {
                             {/* @ts-ignore */}
                             <GlassCard mt={4} whiteStyle>
                                 <p>
-                                    Se puede decir que una memoria se ve de la
-                                    siguiente manera, son muchos cuadros
-                                    llamados
-                                    <i style={{ margin: "0 0.25rem" }}>
-                                        memory slots
-                                    </i>{" "}
-                                    que son los espacios en los cuales se va a
-                                    guardar cierta cantidad de información
+                                    Tenemos las direcciones y junto a ellas cada
+                                    uno de los datos que se van guardando.
+                                    <br />
+                                    <br />
+                                    Actualmente las computadoras permiten
+                                    representar valores en 32{" "}
+                                    <i style={{ margin: "0 0.25rem " }}>bits</i>
+                                    , e incluso algunas más modernas que pueden representarlos hasta en 64 
+                                    <i style={{ margin: "0 0.25rem " }}>bits</i>
                                 </p>
                             </GlassCard>
                         </motion.div>
                     </Box>
                 </Col>
-                <Col col={5}>
+                <Col col={6}>
                     <Box display="flex" justifyContent="flex-end">
                         <motion.div
                             initial="hidden"
@@ -63,9 +66,9 @@ const Class6Slide2 = () => {
                         >
                             <RoundedImageContainer mt={4}>
                                 <RoundedImage
-                                    src={"/images/class-6/memory.png"}
-                                    width={456}
-                                    height={304}
+                                    src={"/images/class-6/memory-address.png"}
+                                    width={358}
+                                    height={388}
                                 />
                             </RoundedImageContainer>
                         </motion.div>
@@ -75,4 +78,4 @@ const Class6Slide2 = () => {
         </Container>
     );
 };
-export default Class6Slide2;
+export default Class6Slide5;

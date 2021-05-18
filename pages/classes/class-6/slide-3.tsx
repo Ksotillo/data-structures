@@ -8,12 +8,12 @@ import { GlassCard, GlassCardContent } from "UI/Card/Card";
 import { RoundedImage } from "UI/Image/Image";
 import { RoundedImageContainer } from "UI/ImageContainer/RoundedImage";
 
-const Class6Slide2 = () => {
+const Class6Slide3 = () => {
     const controls = useSlideAnimationControls();
     return (
         <Container>
             <Row>
-                <Col col={7}>
+                <Col col={6}>
                     <Box pr={5}>
                         <motion.div
                             initial="hidden"
@@ -23,7 +23,7 @@ const Class6Slide2 = () => {
                             custom={0}
                             transition={transition}
                         >
-                            <H1 shadow>¿Cómo funciona la memoria?</H1>
+                            <H1 shadow>¿Cómo se guardan los datos?</H1>
                         </motion.div>
                     </Box>
                     <Box pr={5}>
@@ -38,20 +38,28 @@ const Class6Slide2 = () => {
                             {/* @ts-ignore */}
                             <GlassCard mt={4} whiteStyle>
                                 <p>
-                                    Se puede decir que una memoria se ve de la
-                                    siguiente manera, son muchos cuadros
-                                    llamados
+                                    En un{" "}
                                     <i style={{ margin: "0 0.25rem" }}>
-                                        memory slots
+                                        memory slot
                                     </i>{" "}
-                                    que son los espacios en los cuales se va a
-                                    guardar cierta cantidad de información
+                                    (o espacio de memoria) podemos meter lo que
+                                    es un{" "}
+                                    <i style={{ margin: "0 0.25rem" }}>byte</i>{" "}
+                                    (que como sabemos son 8{" "}
+                                    <i style={{ margin: "0 0.25rem" }}>bits</i>) y si queremos guardar 
+                                    el valor de la variable edad que es 25, podemos hacerlo guardando 
+                                    su representación en binario.
+                                    <br/>
+                                    <br/>
+                                    Los datos guardados en los espacios de memoria se hace forma totalmente
+                                    aleatoria, no es algo que decidimo nosotros, sino que la computadora
+                                    lo hace automáticamente pero... ¿Cómo sabemos dónde se guarda esta información entonces?
                                 </p>
                             </GlassCard>
                         </motion.div>
                     </Box>
                 </Col>
-                <Col col={5}>
+                <Col col={6}>
                     <Box display="flex" justifyContent="flex-end">
                         <motion.div
                             initial="hidden"
@@ -61,11 +69,11 @@ const Class6Slide2 = () => {
                             custom={2}
                             transition={transition}
                         >
-                            <RoundedImageContainer mt={4}>
+                            <RoundedImageContainer mt={6}>
                                 <RoundedImage
-                                    src={"/images/class-6/memory.png"}
-                                    width={456}
-                                    height={304}
+                                    src={"/images/class-6/memory-slots.png"}
+                                    width={457}
+                                    height={296}
                                 />
                             </RoundedImageContainer>
                         </motion.div>
@@ -75,4 +83,4 @@ const Class6Slide2 = () => {
         </Container>
     );
 };
-export default Class6Slide2;
+export default Class6Slide3;

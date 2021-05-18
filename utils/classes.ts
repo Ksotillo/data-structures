@@ -80,7 +80,7 @@ const classes: {
     "class-6": {
         title: "Memoria y como se guardas los datos",
         classNumber: 6,
-        totalSlides: 10,
+        totalSlides: 5,
         date: "05/02/2020",
         description:
             "En esta clase revisaremos los operadores lógicos y de comparación, usados comunmente para expresar operaciones lógicas",

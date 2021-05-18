@@ -8,12 +8,12 @@ import { GlassCard, GlassCardContent } from "UI/Card/Card";
 import { RoundedImage } from "UI/Image/Image";
 import { RoundedImageContainer } from "UI/ImageContainer/RoundedImage";
 
-const Class6Slide2 = () => {
+const Class6Slide4 = () => {
     const controls = useSlideAnimationControls();
     return (
         <Container>
             <Row>
-                <Col col={7}>
+                <Col col={6}>
                     <Box pr={5}>
                         <motion.div
                             initial="hidden"
@@ -23,7 +23,10 @@ const Class6Slide2 = () => {
                             custom={0}
                             transition={transition}
                         >
-                            <H1 shadow>¿Cómo funciona la memoria?</H1>
+                            <H1 shadow>
+                                Esto sucede a las direcciones de memoria (Memory
+                                Address)
+                            </H1>
                         </motion.div>
                     </Box>
                     <Box pr={5}>
@@ -38,20 +41,32 @@ const Class6Slide2 = () => {
                             {/* @ts-ignore */}
                             <GlassCard mt={4} whiteStyle>
                                 <p>
-                                    Se puede decir que una memoria se ve de la
-                                    siguiente manera, son muchos cuadros
-                                    llamados
-                                    <i style={{ margin: "0 0.25rem" }}>
-                                        memory slots
-                                    </i>{" "}
-                                    que son los espacios en los cuales se va a
-                                    guardar cierta cantidad de información
+                                    Para el ejemplo a continuación tenemos la
+                                    variable saludo con el valor "Hola", la cual
+                                    se forma de 4{" "}
+                                    <i style={{ margin: "0 0.25rem" }}>bytes</i>
+                                    , por lo que la computadora debe de buscar 4
+                                    bytes que estén libres en la memoria para
+                                    poder guardar esa información.
+                                    <br />
+                                    <br />
+                                    Los cuadros con color significaría espacios
+                                    de memoria ya ocupados, por lo que la
+                                    información no puede guardarse ahí, se puede
+                                    notar como estos están dispersos, ya que, de
+                                    nuevo, esta asignación se hace de manera
+                                    aleatoria.
+                                    <br />
+                                    <br />
+                                    Ahora, la dirección de memoria son cada uno de esos cuadros, cada uno tiene un identificador único,
+                                    de manera tal de que se pueda saber la dirección en la cual se tiene esa información y el consecutivo
+                                    de las demás direcciones que son necesarias para recuperar la información completa
                                 </p>
                             </GlassCard>
                         </motion.div>
                     </Box>
                 </Col>
-                <Col col={5}>
+                <Col col={6}>
                     <Box display="flex" justifyContent="flex-end">
                         <motion.div
                             initial="hidden"
@@ -61,11 +76,11 @@ const Class6Slide2 = () => {
                             custom={2}
                             transition={transition}
                         >
-                            <RoundedImageContainer mt={4}>
+                            <RoundedImageContainer mt={6}>
                                 <RoundedImage
-                                    src={"/images/class-6/memory.png"}
-                                    width={456}
-                                    height={304}
+                                    src={"/images/class-6/memory-slots-2.png"}
+                                    width={457}
+                                    height={296}
                                 />
                             </RoundedImageContainer>
                         </motion.div>
@@ -75,4 +90,4 @@ const Class6Slide2 = () => {
         </Container>
     );
 };
-export default Class6Slide2;
+export default Class6Slide4;
