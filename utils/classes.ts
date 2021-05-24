@@ -91,20 +91,20 @@ const classes: {
             gradientColor4: "#ff5200",
         },
     },
-    // "class-7": {
-    //     title: "Estructuras de control: estructuras selectivas",
-    //     classNumber: 7,
-    //     totalSlides: 3,
-    //     date: "05/02/2020",
-    //     description:
-    //         "En esta clase revisaremos las estructuras selectivas, las cuales nos permiten construir el camino de un programa mediante condicionales",
-    //     colors: {
-    //         gradientColor1: "#fcd1d1",
-    //         gradientColor2: "#ece2e1",
-    //         gradientColor3: "#d3e0dc",
-    //         gradientColor4: "#aee1e1",
-    //     },
-    // },
+    "class-7": {
+        title: "Listas Enlazadas Simples",
+        classNumber: 7,
+        totalSlides: 11,
+        date: "23/05/2021",
+        description:
+            "En esta clase revisaremos lo que son las listas enlazadas simples, sus funciones y beneficios sobre los arreglos convencionales",
+        colors: {
+            gradientColor1: "#23049d",
+            gradientColor2: "#aa2ee6",
+            gradientColor3: "#ff79cd",
+            gradientColor4: "#ffdf6b",
+        },
+    },
     // "class-8": {
     //     title: "Estructuras de control: estructuras repetitivas",
     //     classNumber: 8,

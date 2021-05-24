@@ -24,8 +24,7 @@ const Class7Slide2 = () => {
                             transition={transition}
                         >
                             <H1 shadow>
-                                Pero antes de empezar, necesitamos definir algo
-                                fundamental, los nodos ¿Qué es un Nodo?
+                                ¿Cómo se guardan las Listas Enlazadas en memoria?
                             </H1>
                         </motion.div>
                     </Box>
@@ -41,27 +40,9 @@ const Class7Slide2 = () => {
                             {/* @ts-ignore */}
                             <GlassCard mt={4} whiteStyle>
                                 <p>
-                                    Un nodo es un dispositivo o punto de datos
-                                    en una red más grande.
-                                    <br />
-                                    <br />
-                                    Un nodo puede ser un par de cosas diferentes
-                                    dependiendo de si la conversación es sobre
-                                    informática o redes.
-                                    <br />
-                                    <br />
-                                    En la creación de redes, un nodo es un punto
-                                    de conexión, un punto de redistribución o un
-                                    punto final de comunicación. En informática,
-                                    los nodos son dispositivos o puntos de datos
-                                    en una red grande, los dispositivos como PC,
-                                    teléfono o impresora se consideran nodos.
-                                    <br />
-                                    <br />
-                                    En general, un nodo tiene una capacidad
-                                    programada o diseñada que le permite
-                                    reconocer, procesar o reenviar transmisiones
-                                    a otros nodos.
+                                    Los nodos de la lista enlazada se guardan aleatoriamente en la memoria, no 
+                                    tienen que estar contiguos a diferencia de los arreglos, y no hay problema 
+                                    con esto porque cada nodo tiene referencia al nodo que le sigue
                                 </p>
                             </GlassCard>
                         </motion.div>
@@ -77,13 +58,13 @@ const Class7Slide2 = () => {
                             custom={2}
                             transition={transition}
                         >
-                            <RoundedImageContainer mt={6}>
+                            <RoundedImageContainer mt={4}>
                                 <RoundedImage
                                     src={
-                                        "/images/class-7/small_directed_network_labeled.png"
+                                        "/images/class-7/list.png"
                                     }
-                                    width={538}
-                                    height={520}
+                                    width={677}
+                                    height={644}
                                 />
                             </RoundedImageContainer>
                         </motion.div>

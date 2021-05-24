@@ -99,4 +99,9 @@ export const GlassCardContent = styled.div<{ whiteStyle?: boolean }>`
                 whiteStyle ? "#1a4551 !important" : "inherit"};
         }
     }
+
+    b {
+        color: ${({ whiteStyle }) =>
+            whiteStyle ? "#1a4551 !important" : "inherit"};
+    }
 `;

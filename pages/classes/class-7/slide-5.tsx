@@ -7,8 +7,21 @@ import { Box } from "UI/Box/Box";
 import { GlassCard, GlassCardContent } from "UI/Card/Card";
 import { RoundedImage } from "UI/Image/Image";
 import { RoundedImageContainer } from "UI/ImageContainer/RoundedImage";
+import { CodeBlock, dracula } from "react-code-blocks";
 
-const Class7Slide2 = () => {
+const nodeCodeBlock = `
+class Node {
+    int value;
+    Node next;
+
+    Node(int d) {
+      value = d;
+      next = null;
+    }
+  }
+`;
+
+const Class7Slide5 = () => {
     const controls = useSlideAnimationControls();
     return (
         <Container>
@@ -24,8 +37,7 @@ const Class7Slide2 = () => {
                             transition={transition}
                         >
                             <H1 shadow>
-                                Pero antes de empezar, necesitamos definir algo
-                                fundamental, los nodos ¿Qué es un Nodo?
+                                Anatomía de un Nodo de Lista Enlazada
                             </H1>
                         </motion.div>
                     </Box>
@@ -40,29 +52,30 @@ const Class7Slide2 = () => {
                         >
                             {/* @ts-ignore */}
                             <GlassCard mt={4} whiteStyle>
-                                <p>
-                                    Un nodo es un dispositivo o punto de datos
-                                    en una red más grande.
-                                    <br />
-                                    <br />
-                                    Un nodo puede ser un par de cosas diferentes
-                                    dependiendo de si la conversación es sobre
-                                    informática o redes.
-                                    <br />
-                                    <br />
-                                    En la creación de redes, un nodo es un punto
-                                    de conexión, un punto de redistribución o un
-                                    punto final de comunicación. En informática,
-                                    los nodos son dispositivos o puntos de datos
-                                    en una red grande, los dispositivos como PC,
-                                    teléfono o impresora se consideran nodos.
-                                    <br />
-                                    <br />
-                                    En general, un nodo tiene una capacidad
-                                    programada o diseñada que le permite
-                                    reconocer, procesar o reenviar transmisiones
-                                    a otros nodos.
-                                </p>
+                                <GlassCardContent whiteStyle style={{ maxHeight: "100%" }}>
+                                    <p>
+                                        Veamos como cada nodo dentro de una
+                                        lista enlazada está representado. Cada
+                                        nodo consiste en:
+                                        <ul>
+                                            <li>
+                                                La información correspondiente
+                                                al nodo
+                                            </li>
+                                            <li>La dirección de otro nodo</li>
+                                        </ul>
+                                        Envolvemos tanto la inforamción
+                                        como la referencia al siguiente Nodo en
+                                        una estructura como:
+                                        <CodeBlock
+                                            text={nodeCodeBlock}
+                                            language={"java"}
+                                            showLineNumbers
+                                            wrapLines
+                                            theme={dracula}
+                                        />
+                                    </p>
+                                </GlassCardContent>
                             </GlassCard>
                         </motion.div>
                     </Box>
@@ -80,10 +93,10 @@ const Class7Slide2 = () => {
                             <RoundedImageContainer mt={6}>
                                 <RoundedImage
                                     src={
-                                        "/images/class-7/small_directed_network_labeled.png"
+                                        "/images/class-7/singly_linked_list_node.png"
                                     }
-                                    width={538}
-                                    height={520}
+                                    width={717}
+                                    height={462}
                                 />
                             </RoundedImageContainer>
                         </motion.div>
@@ -93,4 +106,4 @@ const Class7Slide2 = () => {
         </Container>
     );
 };
-export default Class7Slide2;
+export default Class7Slide5;
