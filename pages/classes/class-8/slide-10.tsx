@@ -6,45 +6,14 @@ import { useSlideAnimationControls } from "hooks/useAnimationControls";
 import { GlassCardContent } from "UI/Card/Card";
 import ItemsSlide from "components/ItemsSlide/ItemsSlide";
 
-
-
 // bigger_picture.jpeg
 const items = [
-    {
-        title: "A true King",
-        Component: () => (
-            <GlassCardContent>
-                <Image
-                    src={
-                        "/images/class-7/i-know-chad-meme-yes-chad01601860089.jpg"
-                    }
-                    width={400}
-                    height={225}
-                />
-                <br />
-                <motion.p
-                    initial="hidden"
-                    animate="visible"
-                    variants={variants}
-                    exit="exits"
-                    custom={1}
-                    transition={transition}
-                    style={{ marginTop: ".5rem" }}
-                >
-                    La verdad es que las listas enlazadas es una de las
-                    Estructuras de Datos más popular y eficiente, con
-                    implementaciones en muchos lenguajes de programación, como
-                    en C, C++, Python, Java y C#.
-                </motion.p>
-            </GlassCardContent>
-        ),
-    },
     {
         title: "Dinamismo en memoria",
         Component: () => (
             <GlassCardContent>
                 <Image
-                    src={"/images/class-7/list.png"}
+                    src={"/images/class-8/doubly_list.png"}
                     width={339}
                     height={322}
                 />
@@ -66,13 +35,13 @@ const items = [
         ),
     },
     {
-        title: "Genial para empezar a aprender",
+        title: "⬅➡",
         Component: () => (
             <GlassCardContent>
                 <Image
-                    src={"/images/class-7/cover-page-logo.png"}
-                    width={240}
-                    height={240}
+                    src={"/images/class-8/backward_forward.jpg"}
+                    width={320}
+                    height={180}
                 />
                 <motion.p
                     initial="hidden"
@@ -83,16 +52,20 @@ const items = [
                     transition={transition}
                     style={{ marginTop: ".5rem" }}
                 >
-                    Las listas enlazadas son un geniales para aprender como
-                    funcionan los apuntadores. Al practicar manipulando listas
-                    enlazadas uno se puede preparar más fácilmente para manejar
-                    estructuras de datos más avanzadas como grafos y árboles.
+                    La funcionalidad de ir tanto hacia la página anterior como
+                    la siguiente en los navegadores se implementado con este
+                    tipo estructura de datos.
+                    <br />
+                    <br />Y en general, para cualquier sistema de navegación
+                    dónde la navegación hacia adelante y hacia atrás sea
+                    requerida, es posible que se vea la implementación de esta
+                    estructua.
                 </motion.p>
             </GlassCardContent>
         ),
     },
     {
-        title: "Ctrl + Z",
+        title: "Ctrl + Z & Ctrl + Y",
         Component: () => (
             <GlassCardContent>
                 <Image
@@ -109,19 +82,20 @@ const items = [
                     transition={transition}
                     style={{ marginTop: ".5rem" }}
                 >
-                    Típicamente la funcionalidad de deshacer en los programa se
-                    implementan con una lista enlazada 👨‍💻
+                    Típicamente la funcionalidad de deshacer y rehacer en los
+                    programa se implementan con una listas doblemente enlazadas
+                    👨‍💻
                 </motion.p>
             </GlassCardContent>
         ),
     },
 ];
 
-const Class7Slide11 = () => {
+const Class8Slide10 = () => {
     const controls = useSlideAnimationControls();
     return (
         <ItemsSlide
-            title="Okay to' cool, to' gucci... pero, ¿En qué situaciones se utilizan las Listas Enlazadas o cuando nos son útiles?"
+            title="Vale, ahora, ¿Cuales son algunos ejemplos de uso para las Listas Doblemente Enlazadas?"
             items={items}
             controls={controls}
             transition={transition}
@@ -131,4 +105,4 @@ const Class7Slide11 = () => {
     );
 };
 
-export default Class7Slide11;
+export default Class8Slide10;

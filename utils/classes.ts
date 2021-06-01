@@ -105,20 +105,20 @@ const classes: {
             gradientColor4: "#ffdf6b",
         },
     },
-    // "class-8": {
-    //     title: "Estructuras de control: estructuras repetitivas",
-    //     classNumber: 8,
-    //     totalSlides: 3,
-    //     date: "16/02/2020",
-    //     description:
-    //         "En esta clase revisaremos las estructuras repetitivas, los cuales nos permiten repeitr código mediante los bucles",
-    //     colors: {
-    //         gradientColor1: "#ff5f5f",
-    //         gradientColor2: "#ff8181",
-    //         gradientColor3: "#ffa9a9",
-    //         gradientColor4: "#ffb5b5",
-    //     },
-    // },
+    "class-8": {
+        title: "Listas Doblemente Enlazadas",
+        classNumber: 8,
+        totalSlides: 10,
+        date: "31/05/2021",
+        description:
+            "En esta clase revisaremos lo que son las listas doblemente enlazadas, sus funciones y beneficios sobre las listas simples",
+        colors: {
+            gradientColor1: "#f5f7b2",
+            gradientColor2: "#1cc5dc",
+            gradientColor3: "#890596",
+            gradientColor4: "#cf0000",
+        },
+    },
     // "class-9": {
     //     title: "Estructura de Datos: Listas",
     //     classNumber: 9,

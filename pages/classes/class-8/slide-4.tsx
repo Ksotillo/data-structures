@@ -7,8 +7,23 @@ import { Box } from "UI/Box/Box";
 import { GlassCard, GlassCardContent } from "UI/Card/Card";
 import { RoundedImage } from "UI/Image/Image";
 import { RoundedImageContainer } from "UI/ImageContainer/RoundedImage";
+import { CodeBlock, dracula } from "react-code-blocks";
 
-const Class8Slide2 = () => {
+const nodeCodeBlock = `
+class Node<T> {
+    T value;
+    Node next;
+    Node prev;
+
+    Node(T d) {
+      value = d;
+      next = null;
+      prev = null;
+    }
+  }
+`;
+
+const Class8Slide4 = () => {
     const controls = useSlideAnimationControls();
     return (
         <Container>
@@ -24,7 +39,7 @@ const Class8Slide2 = () => {
                             transition={transition}
                         >
                             <H1 shadow>
-                                ¿Qué son las Listas Doblemente Enlazadas?
+                                Anatomía de un Nodo de Lista Doblemente Enlazada
                             </H1>
                         </motion.div>
                     </Box>
@@ -39,27 +54,38 @@ const Class8Slide2 = () => {
                         >
                             {/* @ts-ignore */}
                             <GlassCard mt={4} whiteStyle>
-                                <p>
-                                    Una lista doblemente enlazada, al igual que
-                                    las listas enlazadas simples, es una
-                                    estructura de datos que consiste en una
-                                    serie de nodos conectados.
-                                    <br />
-                                    <br />
-                                    Aquí, cada uno de estos nodos lleva consigo
-                                    cierto tipo de datos, una dirección que
-                                    apunta al siguiente Nodo y una dirección que
-                                    apunta al Nodo anterior.
-                                    <br />
-                                    <br />
-                                    Al igual que las listas enlazadas tenemos un
-                                    nodo por dónde podemos empezar el cual
-                                    llamamos <i>cabeza (HEAD)</i>y un nodo que
-                                    identificamos como el último de nuestra
-                                    lista llamado cola o TAIL, que igualmente
-                                    apunto a <i>NULL</i>
-                                    <br />
-                                </p>
+                                <GlassCardContent
+                                    whiteStyle
+                                    style={{ maxHeight: "100%", padding: 0 }}
+                                >
+                                    <p>
+                                        Veamos como cada nodo dentro de una
+                                        lista doblemente enlazada enlazada está
+                                        representado. Cada nodo consiste en:
+                                        <ul>
+                                            <li>
+                                                La información correspondiente
+                                                al nodo
+                                            </li>
+                                            <li>
+                                                La dirección del siguiente nodo
+                                            </li>
+                                            <li>
+                                                La dirección del anterior nodo{" "}
+                                            </li>
+                                        </ul>
+                                        Envolvemos tanto la inforamción como la
+                                        referencia al siguiente Nodo en una
+                                        estructura como:
+                                        <CodeBlock
+                                            text={nodeCodeBlock}
+                                            language={"java"}
+                                            showLineNumbers
+                                            wrapLines
+                                            theme={dracula}
+                                        />
+                                    </p>
+                                </GlassCardContent>
                             </GlassCard>
                         </motion.div>
                     </Box>
@@ -77,10 +103,10 @@ const Class8Slide2 = () => {
                             <RoundedImageContainer mt={6}>
                                 <RoundedImage
                                     src={
-                                        "/images/class-8/doubly_linked_list.png"
+                                        "/images/class-8/doubly_linked_list_node.png"
                                     }
-                                    width={638}
-                                    height={367}
+                                    width={717}
+                                    height={462}
                                 />
                             </RoundedImageContainer>
                         </motion.div>
@@ -90,4 +116,4 @@ const Class8Slide2 = () => {
         </Container>
     );
 };
-export default Class8Slide2;
+export default Class8Slide4;
