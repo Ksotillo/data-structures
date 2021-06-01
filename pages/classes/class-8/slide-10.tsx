@@ -69,7 +69,7 @@ const items = [
         Component: () => (
             <GlassCardContent>
                 <Image
-                    src={"/images/class-7/the-not-using-a-computer-problem.jpg"}
+                    src={"/images/class-8/the-not-using-a-computer-problem.jpg"}
                     width={250}
                     height={270}
                 />
