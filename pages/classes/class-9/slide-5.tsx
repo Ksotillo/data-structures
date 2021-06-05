@@ -7,20 +7,61 @@ import { variants, transition } from "utils/motionVariants";
 import { useSlideAnimationControls } from "hooks/useAnimationControls";
 import { GlassCard } from "UI/Card/Card";
 import { Box, WhiteBox, ColoredTextOnHover } from "UI/Box/Box";
+import { useState } from "react";
+import { RoundedImage } from "UI/Image/Image";
+import { RoundedImageContainer } from "UI/ImageContainer/RoundedImage";
 
-const differences = [
-    ["Cada nodo consiste en la información del nodo y un apuntador al siguiente nodo", "Cada nodo consiste en la información del nodo, un apuntador al siguiente nodo, y un apuntador al anterior nodo" ],,
-    ["Se puede recorrer en un sólo sentido", "Se puede recorrer en doble sentido "],
-    [ "Requiere menos espacio en memoria", "Requiere más espacio porque tiene apuntador extra" ],
+const dataTypes = [
+    {
+        title: "Listas Circulares Simples",
+        content: (
+            <>
+                Los nodos de la lista circulares se guardan aleatoriamente en la
+                memoria, y no hay problema con esto porque cada nodo tiene
+                referencia al nodo que le sigue.
+            </>
+        ),
+        // @ts-ignore
+        frame: (
+            <RoundedImageContainer mt={4}>
+                <RoundedImage
+                    src={"/images/class-9/list.png"}
+                    width={677}
+                    height={644}
+                />
+            </RoundedImageContainer>
+        ),
+    },
+    {
+        title: "Listas Circulares Dobles",
+        content: (
+            <>
+                Los nodos de la lista circulares dobles funcionan basicamente
+                igual, pero al tener estos un nuevo apuntador a otra dirección
+                de memoria que hace referencia al nodo anterior, ocupa más
+                espacio en la memoria.
+            </>
+        ),
+        // @ts-ignore
+        frame: (
+            <RoundedImageContainer mt={4}>
+                <RoundedImage
+                    src={"/images/class-9/doubly_list.png"}
+                    width={677}
+                    height={644}
+                />
+            </RoundedImageContainer>
+        ),
+    },
 ];
 
-const Class8Slide9 = () => {
+const Class9Slide5 = () => {
     const controls = useSlideAnimationControls();
-    // const [currentType, setCurrentType] = useState(0);
+    const [currentType, setCurrentType] = useState(0);
     return (
         <Container>
             <Row>
-                <Col col={12}>
+                <Col col={6}>
                     <motion.div
                         initial="hidden"
                         animate={controls}
@@ -28,8 +69,8 @@ const Class8Slide9 = () => {
                         custom={0}
                         transition={transition}
                     >
-                        <H1 shadow textAlign="center">
-                            Listas Enlazadas Simples vs Listas Enlazadas Dobles
+                        <H1 shadow>
+                            Veamoslo desde el punto de vista de memoria
                         </H1>
                     </motion.div>
                     <Box mt={4} pr={3}>
@@ -52,16 +93,22 @@ const Class8Slide9 = () => {
                                         display="flex"
                                         justifyContent="space-around"
                                     >
-                                        {[
-                                            "Lista Enlazadas",
-                                            "Listas Doblemente Enlazadas",
-                                        ].map((item, index) => (
-                                            <WhiteBox className={"selected"}>
+                                        {dataTypes.map((item, index) => (
+                                            <WhiteBox
+                                                className={
+                                                    currentType === index
+                                                        ? "selected"
+                                                        : ""
+                                                }
+                                                onClick={() =>
+                                                    setCurrentType(index)
+                                                }
+                                            >
                                                 <ColoredTextOnHover
                                                     py={3}
                                                     px={4}
                                                 >
-                                                    {item}
+                                                    {item.title}
                                                 </ColoredTextOnHover>
                                             </WhiteBox>
                                         ))}
@@ -75,29 +122,23 @@ const Class8Slide9 = () => {
                                             transition={transition}
                                         >
                                             <H4>
-                                                <table>
-                                                    {differences.map(
-                                                        (
-                                                            [singly, doubly],
-                                                            index
-                                                        ) => (
-                                                            <tr key={index}>
-                                                                <td>
-                                                                    👉 {singly}
-                                                                </td>
-                                                                <td>
-                                                                    👉 {doubly}
-                                                                </td>
-                                                            </tr>
-                                                        )
-                                                    )}
-                                                </table>
+                                                {dataTypes[currentType].content}
                                             </H4>
                                         </motion.div>
                                     </Box>
                                 </motion.div>
                             </GlassCardForTabs>
                         </motion.div>
+                    </Box>
+                </Col>
+                <Col col={6}>
+                    <Box
+                        display="flex"
+                        alignItems="center"
+                        justifyContent="space-between"
+                        py={3}
+                    >
+                        {dataTypes[currentType].frame}
                     </Box>
                 </Col>
             </Row>
@@ -137,16 +178,6 @@ const GlassCardForTabs = styled(GlassCard)`
 
         ${H4} {
             color: #1a4551 !important;
-            * {
-                color: #1a4551 !important;
-            }
-            table tr td {
-                padding: 1rem;
-                width: 50%;
-            }
-            table tr td:nth-child(odd) {
-                border-right: 1px solid #ada8a87d;
-            }
         }
 
         ul {
@@ -160,4 +191,4 @@ const GlassCardForTabs = styled(GlassCard)`
     }
 `;
 
-export default Class8Slide9;
+export default Class9Slide5;

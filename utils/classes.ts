@@ -119,20 +119,20 @@ const classes: {
             gradientColor4: "#cf0000",
         },
     },
-    // "class-9": {
-    //     title: "Estructura de Datos: Listas",
-    //     classNumber: 9,
-    //     totalSlides: 4,
-    //     date: "19/02/2020",
-    //     description:
-    //         "En esta clase revisaremos las estructuras repetitivas, los cuales nos permiten repeitr código mediante los bucles",
-    //     colors: {
-    //         gradientColor1: "#dcdcdc",
-    //         gradientColor2: "#94ffb4",
-    //         gradientColor3: "#71d2cb",
-    //         gradientColor4: "#161d6f",
-    //     },
-    // },
+    "class-9": {
+        title: "Listas Ciculares",
+        classNumber: 9,
+        totalSlides: 8,
+        date: "06/06/2021",
+        description:
+            "En esta clase revisaremos lo que son las listas enlazadas circulares, sus funciones y beneficios sobre las listas simples",
+        colors: {
+            gradientColor1: "#393e46",
+            gradientColor2: "#00adb5",
+            gradientColor3: "#aad8d3",
+            gradientColor4: "#eeeeee",
+        },
+    },
     // "class-10": {
     //     title: "Funciones",
     //     classNumber: 10,
