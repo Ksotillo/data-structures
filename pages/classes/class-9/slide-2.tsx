@@ -51,14 +51,18 @@ const Class9Slide2 = () => {
                                     apunta al siguiente Nodo.
                                     <br />
                                     <br />
-                                    Al igual que las listas enlazadas tenemos un
-                                    nodo por dónde podemos empezar el cual
-                                    llamamos <i>cabeza (HEAD)</i>y un nodo que
-                                    identificamos como el último de nuestra
-                                    lista llamado cola o TAIL, que a diferencia
-                                    de las listas enlazadas simples o dobles no
-                                    apunta a <i>NULL</i>, en cambio, este apunta
-                                    a la cabeza, creando así un ciclo.
+                                    En las listas lineales simples o en las
+                                    dobles siempre hay un primer nodo (cabeza o{" "}
+                                    <i>HEAD</i>) y un último nodo (cola o{" "}
+                                    <i>TAIL</i>). Una lista circular, por propia
+                                    naturaleza, no tiene ni principio ni fin.
+                                    Sin embargo, resulta útil establecer un nodo
+                                    a partir del cual se acceda a la lista y así
+                                    poder acceder a sus nodos. Normalmente este nodo es
+                                    el último añadido a la estructura. Esta
+                                    convención puede cambiar, ya que en una
+                                    estructura circular no hay primero ni
+                                    último.
                                     <br />
                                 </p>
                             </GlassCard>
