@@ -11,14 +11,15 @@ import { CodeBlock, dracula } from "react-code-blocks";
 
 const queueCodeBlock = `
 class Queue  {
-    Node head;
+    Node first;
+    Node last;
     int length;
     // Constructores
     public Queue(){
-        this.head = null;
+        this.first = this.last = null;
     }
     public Queue(Node n){
-        this.head = n;
+        this.first = this.head = n;
     }
 }
 `;
