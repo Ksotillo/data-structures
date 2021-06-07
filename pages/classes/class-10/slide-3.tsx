@@ -8,7 +8,7 @@ import { GlassCard, GlassCardContent } from "UI/Card/Card";
 import { RoundedImage } from "UI/Image/Image";
 import { RoundedImageContainer } from "UI/ImageContainer/RoundedImage";
 
-const Class10Slide2 = () => {
+const Class10Slide3 = () => {
     const controls = useSlideAnimationControls();
     return (
         <Container>
@@ -23,10 +23,7 @@ const Class10Slide2 = () => {
                             custom={0}
                             transition={transition}
                         >
-                            <H1 shadow>
-                                Principio del último en llegar es el primero en
-                                salir
-                            </H1>
+                            <H1 shadow>¿Qué son las Pilas?</H1>
                         </motion.div>
                     </Box>
                     <Box pr={5}>
@@ -40,26 +37,33 @@ const Class10Slide2 = () => {
                         >
                             {/* @ts-ignore */}
                             <GlassCard mt={4} whiteStyle>
-                                <p>
-                                    Last In First Out (LIFO) o el último en
-                                    llegar es el primero en salir se refiere a
-                                    un principio en el cual siempre el último
-                                    elemento que es agregado a un grupo es el
-                                    primero que es eliminado/removido.
-                                    <br />
-                                    <br />
-                                    Imagina por ejemplo una pila de ropa, en la
-                                    que siempre estas agregando ropa al
-                                    principio y típicamente esa también es la
-                                    que sacas primero. A eso es lo que se
-                                    refiere este principio.
-                                    <br />
-                                    <br />
-                                    Dejando el ejemplo de lado ya que no aplica, con
-                                    este principio no podemos buscar en el medio de la pila,
-                                    para eso tendríamos que sacarla toda de una por una.
-
-                                </p>
+                                <GlassCardContent whiteStyle>
+                                    <p>
+                                        Una Pila es una estructura lineal que
+                                        sigue el principio de Last In First Out
+                                        (LIFO), esto significa que el último
+                                        elemento insertado en la pila es el
+                                        primero que se elimina.
+                                        <br />
+                                        <br />
+                                        Siguiendo la analogía de la pila de
+                                        ropa, aquí tu puedes:
+                                        <br />
+                                        <br />
+                                        <ul>
+                                            <li>
+                                                Agregar un elemento en la cima
+                                            </li>
+                                            <li>
+                                                Quitar un elemento de la cima
+                                            </li>
+                                        </ul>
+                                        Si quieres el elemento que está al fondo
+                                        de la pila, primero debes de eliminar
+                                        todos los que están por encima. Así es
+                                        como funciona esta estructura.
+                                    </p>
+                                </GlassCardContent>
                             </GlassCard>
                         </motion.div>
                     </Box>
@@ -74,13 +78,11 @@ const Class10Slide2 = () => {
                             custom={2}
                             transition={transition}
                         >
-                            <RoundedImageContainer mt={6}>
+                            <RoundedImageContainer mt={4}>
                                 <RoundedImage
-                                    src={
-                                        "/images/class-10/clothe-stack.png"
-                                    }
-                                    width={658}
-                                    height={507}
+                                    src={"/images/class-10/stack_.png"}
+                                    width={586}
+                                    height={395}
                                 />
                             </RoundedImageContainer>
                         </motion.div>
@@ -90,4 +92,4 @@ const Class10Slide2 = () => {
         </Container>
     );
 };
-export default Class10Slide2;
+export default Class10Slide3;

@@ -133,20 +133,20 @@ const classes: {
             gradientColor4: "#eeeeee",
         },
     },
-    // "class-10": {
-    //     title: "Funciones",
-    //     classNumber: 10,
-    //     totalSlides: 2,
-    //     date: "24/03/2020",
-    //     description:
-    //         "En esta clase revisaremos las funciones, las cuales nos permite modularizar",
-    //     colors: {
-    //         gradientColor1: "#53354a",
-    //         gradientColor2: "#903749",
-    //         gradientColor3: "#e84545",
-    //         gradientColor4: "#2b2e4a",
-    //     },
-    // },
+    "class-10": {
+        title: "Stack",
+        classNumber: 10,
+        totalSlides: 7,
+        date: "24/03/2020",
+        description:
+            "En esta clase veremos lo que son los Stack o Pilas, unas estructuras bastante sencillas pero muy útiles y utilizadas en el mundo de la programación",
+        colors: {
+            gradientColor1: "#ffc996",
+            gradientColor2: "#ff8474",
+            gradientColor3: "#9f5f80",
+            gradientColor4: "#583d72",
+        },
+    },
     // "class-11": {
     //     title: "Estructura de Datos:  Diccionarios",
     //     classNumber: 11,
