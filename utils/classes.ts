@@ -134,7 +134,7 @@ const classes: {
         },
     },
     "class-10": {
-        title: "Stacks",
+        title: "Pilas",
         classNumber: 10,
         totalSlides: 7,
         date: "24/03/2020",
