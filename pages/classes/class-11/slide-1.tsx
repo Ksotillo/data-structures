@@ -1,30 +1,17 @@
-import { Container, Row } from "styled-bootstrap-grid";
-
-import styled from 'styled-components';
-import { motion } from "framer-motion";
 import { variants, transition } from "utils/motionVariants";
 import { useSlideAnimationControls } from "hooks/useAnimationControls";
+import TitleSlide from "components/TitleSlide/TitleSlide";
 
-const Class11Slide1 = () => {
+const Class10Slide1 = () => {
     const controls = useSlideAnimationControls();
     return (
-        <Container>
-            <Row justifyContent='center'>
-                <motion.div  initial='hidden' animate={controls} variants={variants} custom={0} transition={transition}>
-                    <Title>
-                        Python: <br/> Diccionarios
-                    </Title>
-                </motion.div>
-            </Row>
-        </Container>
-    )
-}
+        <TitleSlide
+            title={"Colas o Queues"}
+            controls={controls}
+            variants={variants}
+            transition={transition}
+        />
+    );
+};
 
-const Title = styled.h1`
-    font-size: 7rem;
-    text-shadow: ${props => props.theme.textShadow};
-    text-align: center;
-`
-
-
-export default Class11Slide1;
+export default Class10Slide1;

@@ -137,7 +137,7 @@ const classes: {
         title: "Pilas",
         classNumber: 10,
         totalSlides: 7,
-        date: "24/03/2020",
+        date: "06/06/2021",
         description:
             "En esta clase veremos lo que son los Stack o Pilas, unas estructuras bastante sencillas pero muy útiles y utilizadas en el mundo de la programación",
         colors: {
@@ -147,20 +147,20 @@ const classes: {
             gradientColor4: "#583d72",
         },
     },
-    // "class-11": {
-    //     title: "Estructura de Datos:  Diccionarios",
-    //     classNumber: 11,
-    //     totalSlides: 2,
-    //     date: "25/03/2020",
-    //     description:
-    //         "En esta clase revisaremos las estructuras repetitivas, los cuales nos permiten repeitr código mediante los bucles",
-    //     colors: {
-    //         gradientColor1: "#9e9d89",
-    //         gradientColor2: "#e4d3cf",
-    //         gradientColor3: "#e2bcb7",
-    //         gradientColor4: "#b67162",
-    //     },
-    // },
+    "class-11": {
+        title: "Colas",
+        classNumber: 11,
+        totalSlides: 8,
+        date: "07/06/2022",
+        description:
+            "En esta clase veremos lo que son los Queue o Colas, unas estructuras bastante sencillas pero muy útiles y utilizadas en el mundo de la programación",
+        colors: {
+            gradientColor1: "#04009a",
+            gradientColor2: "#77acf1",
+            gradientColor3: "#3edbf0",
+            gradientColor4: "#c0fefc",
+        },
+    },
 };
 
 export default classes;
