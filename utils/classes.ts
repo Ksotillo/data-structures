@@ -151,7 +151,7 @@ const classes: {
         title: "Colas",
         classNumber: 11,
         totalSlides: 8,
-        date: "07/06/2022",
+        date: "07/06/2021",
         description:
             "En esta clase veremos lo que son los Queue o Colas, unas estructuras bastante sencillas pero muy útiles y utilizadas en el mundo de la programación",
         colors: {
@@ -161,6 +161,46 @@ const classes: {
             gradientColor4: "#c0fefc",
         },
     },
+    "class-12": {
+        title: "Hash Tables",
+        classNumber: 12,
+        totalSlides: 15,
+        description:
+            "En esta clase veremos lo que son las Hash Table o Tablas de Dispersión, unas estructuras bastante prevalentes y utilizadas en el mundo de la programación",
+        date: "28/06/2021",
+        colors: {
+            gradientColor1: "#766161",
+            gradientColor2: "#87A7B3",
+            gradientColor3: "#CDC7BE",
+            gradientColor4: "#E1F1DD",
+        },
+    },
+    // "class-13": {
+    //     title: "Nueva Clase2",
+    //     classNumber: 23,
+    //     totalSlides: 3,
+    //     description: "New description",
+    //     date: "07/06/2021",
+    //     colors: {
+    //         gradientColor1: "#11111",
+    //         gradientColor2: "#29432",
+    //         gradientColor3: "#349jw1",
+    //         gradientColor4: "#we231",
+    //     },
+    // },
+    // "class-14": {
+    //     title: "Nueva Clase2",
+    //     classNumber: 23,
+    //     totalSlides: 3,
+    //     description: "New description",
+    //     date: "07/06/2021",
+    //     colors: {
+    //         gradientColor1: "#11111",
+    //         gradientColor2: "#29432",
+    //         gradientColor3: "#349jw1",
+    //         gradientColor4: "#we231",
+    //     },
+    // },
 };
 
 export default classes;
