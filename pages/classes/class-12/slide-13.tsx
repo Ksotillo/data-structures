@@ -19,7 +19,6 @@ class Map<K, V>  {
         bucketArray = new ArrayList<>();
         capacity = 10;
         size = 0;
-
         // Creamos nuestros buckets vacios
         for (int i = 0; i < capacity; i++)
             bucketArray.add(null);

@@ -14,8 +14,6 @@ class HashNode<K, V> {
     K key;
     V value;
     final int hashCode;
-
-    // Reference to next node
     HashNode<K, V> next;
 
     HashNode(K key, V value, int hashCode) {
