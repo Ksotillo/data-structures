@@ -178,7 +178,7 @@ const classes: {
     "class-13": {
         title: "Diagramas UML",
         classNumber: 13,
-        totalSlides: 9,
+        totalSlides: 10,
         description: "New description",
         date: "07/06/2021",
         colors: {
