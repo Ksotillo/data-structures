@@ -175,19 +175,19 @@ const classes: {
             gradientColor4: "#E1F1DD",
         },
     },
-    // "class-13": {
-    //     title: "Nueva Clase2",
-    //     classNumber: 23,
-    //     totalSlides: 3,
-    //     description: "New description",
-    //     date: "07/06/2021",
-    //     colors: {
-    //         gradientColor1: "#11111",
-    //         gradientColor2: "#29432",
-    //         gradientColor3: "#349jw1",
-    //         gradientColor4: "#we231",
-    //     },
-    // },
+    "class-13": {
+        title: "Diagramas UML",
+        classNumber: 13,
+        totalSlides: 9,
+        description: "New description",
+        date: "07/06/2021",
+        colors: {
+            gradientColor1: "#DE8971",
+            gradientColor2: "#7B6079",
+            gradientColor3: "#A7D0CD",
+            gradientColor4: "#FFE9D6",
+        },
+    },
     // "class-14": {
     //     title: "Nueva Clase2",
     //     classNumber: 23,
