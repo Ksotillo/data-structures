@@ -179,8 +179,9 @@ const classes: {
         title: "Diagramas UML",
         classNumber: 13,
         totalSlides: 10,
-        description: "New description",
-        date: "07/06/2021",
+        description:
+            "En esta clase veremos lo que es UML o Unified Modeling Lenguage (Lenguaje de modelado unificado), el cual nos permite a través de sus elementos gráficos representar flujos de trabajo diversos para proyectos de tecnología informática, hardware, electrónica, robótica, hidráulica, procesos industriales, empresariales y gerenciales de cualquier nivel en una organización sin importar su tamaño o naturaleza",
+        date: "07/07/2021",
         colors: {
             gradientColor1: "#DE8971",
             gradientColor2: "#7B6079",
@@ -188,19 +189,20 @@ const classes: {
             gradientColor4: "#FFE9D6",
         },
     },
-    // "class-14": {
-    //     title: "Nueva Clase2",
-    //     classNumber: 23,
-    //     totalSlides: 3,
-    //     description: "New description",
-    //     date: "07/06/2021",
-    //     colors: {
-    //         gradientColor1: "#11111",
-    //         gradientColor2: "#29432",
-    //         gradientColor3: "#349jw1",
-    //         gradientColor4: "#we231",
-    //     },
-    // },
+    "class-14": {
+        title: "Árboles",
+        classNumber: 14,
+        totalSlides: 10,
+        description:
+            "En esta clase veremos lo que son los Árboles, unas estructuras bastante prevalentes y utilizadas en el mundo de la programación",
+        date: "07/07/2021",
+        colors: {
+            gradientColor1: "#F0EBCC",
+            gradientColor2: "#3D84B8",
+            gradientColor3: "#344FA1",
+            gradientColor4: "#3F3697",
+        },
+    },
 };
 
 export default classes;
